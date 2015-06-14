@@ -1,0 +1,26 @@
+{
+  "name": "node-genius",
+  "version": "0.0.1",
+  "description": "Node client for the Genius API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbooker/node-genius"
+  },
+  "keywords": [
+    "Genius"
+  ],
+  "author": "Alex Booker <alexbooker@fastmail.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexbooker/node-genius/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "jshint-stylish": "^2.0.0"
+  }
+}
