@@ -6,7 +6,7 @@ var app = express();
 var config = {
   clientId: "M91xLW_uPOqkP3Mkkf4gQ7QbPV5DjQ_U0w61xaAIPo5JChlNXxIRQHjRKPYhERtD",
   redirectUri: "http://localhost:3000/callback",
-  scope: "manage_annotation",
+  scope: "vote",
   clientSecret: process.env.GENIUS_CLIENT_SECRET
 };
 
