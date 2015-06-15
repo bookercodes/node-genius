@@ -2,7 +2,7 @@ var Genius = require("./lib/index.js");
 
 var geniusClient = new Genius(process.env.GENIUS_ACCESS_TOKEN);
 
-// geniusClient.getAnnotation("6721370", function(error, annotation) {
+// geniusClient.getAnnotation("6895994", function(error, annotation) {
 //   console.log(error);
 //   console.log(annotation);
 // });
@@ -19,6 +19,12 @@ var request = {
   }
 };
 
-geniusClient.createAnnotation(request, function(error, response) {
-  console.log(response);
+// geniusClient.createAnnotation(request, function(error, response) {
+//   console.log(error);
+//   console.log(response);
+// });
+
+geniusClient.deleteAnnotation("6898682", function (error, response) {
+  console.log("error", error );
+  console.log("response", response );
 });
