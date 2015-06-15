@@ -30,12 +30,17 @@ var geniusClient = new Genius(process.env.GENIUS_ACCESS_TOKEN);
 //   console.log("response", response );
 // });
 
-// geniusClient.upvoteAnnotation("6757505", function (error, response) {
+// geniusClient.upvoteAnnotation("5088421", function (error, response) {
 //   console.log("error", error );
 //   console.log("response", response );
 // });
 
-geniusClient.unvoteAnnotation("5088421", function (error, response) {
+// geniusClient.unvoteAnnotation("5088421", function (error, response) {
+//   console.log("error", error );
+//   console.log("response", response );
+// });
+
+geniusClient.downvoteAnnotation("5088421", function (error, response) {
   console.log("error", error );
   console.log("response", response );
 });
