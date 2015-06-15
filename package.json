@@ -24,6 +24,7 @@
     "jshint-stylish": "^2.0.0"
   },
   "dependencies": {
+    "express": "^4.12.4",
     "request": "^2.57.0"
   }
 }
