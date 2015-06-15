@@ -27,8 +27,8 @@ app.get("/callback", function (req, res) {
       code: req.query.code,
       client_secret: process.env.GENIUS_CLIENT_SECRET,
       grant_type: "authorization_code",
-      client_id: clientId,
-      redirect_uri: redirectUri,
+      client_id: config.clientId,
+      redirect_uri: config.redirectUri,
       response_type: "code"
     }
   };
