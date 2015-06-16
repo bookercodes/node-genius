@@ -21,10 +21,10 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.11.0",
-    "jshint-stylish": "^2.0.0"
+    "jshint-stylish": "^2.0.0",
+    "express": "^4.12.4"
   },
   "dependencies": {
-    "express": "^4.12.4",
     "request": "^2.57.0"
   }
 }
