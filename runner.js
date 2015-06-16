@@ -45,15 +45,15 @@ var geniusClient = new Genius(process.env.GENIUS_ACCESS_TOKEN);
 //   console.log("response", response );
 // });
 
-// geniusClient.getMe(function (error, response) {
-//   console.log("error", error );
-//   console.log("response", response );
-// });
-
-geniusClient.getArtistSongs("16775", {"per_page": "2"}, function (error, response) {
+geniusClient.getMe(function (error, response) {
   console.log("error", error );
   console.log("response", response );
 });
+
+// geniusClient.getArtistSongs("16775", {"per_page": "2"}, function (error, response) {
+//   console.log("error", error );
+//   console.log("response", response );
+// });
 
 // geniusClient.getArtist("16775", function (error, response) {
 //   console.log("error", error );
