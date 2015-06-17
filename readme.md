@@ -93,6 +93,10 @@ geniusClient.getArtistSongs("16775", {"page": "1", "per_page": "10"},
 geniusClient.search("Kendrick Lamar", function (error, results) {
 });
 
+// Look up a web page to which annotations may be attached.
+geniusClient.getWebPage({"raw_annotatable_url": "https://docs.genius.com"}, function(error, page) {
+});
+
 // Look up information about the currently authenticated user.
 geniusClient.getMe(function (error, account) {
 });
