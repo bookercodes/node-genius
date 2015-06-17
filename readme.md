@@ -49,6 +49,17 @@ geniusClient.createAnnotation({
   
 });
 
+// Update an annotation.
+geniusClient.updateAnnotation("123", {
+  "annotation": {
+    "body": {
+      "markdown": "This is an updated annotation"
+    }
+  }
+}, function(error, annotation) {
+  
+});
+
 // Permanently delete an annotation.
 geniusClient.deleteAnnotation("123", function (error, response) { 
 });
