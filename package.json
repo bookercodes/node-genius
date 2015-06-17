@@ -1,6 +1,6 @@
 {
   "name": "node-genius",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node client for the Genius API",
   "main": "lib/index.js",
   "repository": {
