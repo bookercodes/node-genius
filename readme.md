@@ -89,6 +89,10 @@ geniusClient.getArtistSongs("16775", {"page": "1", "per_page": "10"},
   function (error, songs) {
   });
 
+// Look up all referents/annotations for a song.
+geniusClient.getReferents({"song_id": "378195", "text_format": "plain"}, function (error, results) {
+});
+
 // Search Genius.
 geniusClient.search("Kendrick Lamar", function (error, results) {
 });
