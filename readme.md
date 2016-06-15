@@ -41,12 +41,12 @@ geniusClient.createAnnotation({
     }
   },
   "referent": {
-    "raw_annotatable_url": 
+    "raw_annotatable_url":
       "http://genius.com/Marianne-moore-marriage-annotated",
     "fragment": "out of respect for which"
   }
 }, function(error, annotation) {
-  
+
 });
 
 // Update an annotation.
@@ -57,23 +57,23 @@ geniusClient.updateAnnotation("123", {
     }
   }
 }, function(error, annotation) {
-  
+
 });
 
 // Permanently delete an annotation.
-geniusClient.deleteAnnotation("123", function (error, response) { 
+geniusClient.deleteAnnotation("123", function (error, response) {
 });
 
 // Upvote an annotation.
-geniusClient.upvoteAnnotation("6737668", function (error, response) { 
+geniusClient.upvoteAnnotation("6737668", function (error, response) {
 });
 
 // Removes vote (up or down) for the annotation.
-geniusClient.unvoteAnnotation("6737668", function (error, response) { 
+geniusClient.unvoteAnnotation("6737668", function (error, response) {
 });
 
 // Downvote an annotation.
-geniusClient.downvoteAnnotation("6737668", function (error, response) { 
+geniusClient.downvoteAnnotation("6737668", function (error, response) {
 });
 
 // Look up a song.
@@ -85,9 +85,13 @@ geniusClient.getArtist("16775", {"text_format": "plain"}, function (error, artis
 });
 
 // Look up songs by the given artist.
-geniusClient.getArtistSongs("16775", {"page": "1", "per_page": "10"}, 
+geniusClient.getArtistSongs("16775", {"page": "1", "per_page": "10"},
   function (error, songs) {
   });
+
+// Look up an album.
+geniusClient.getAlbum("104614", function (error, album) {
+});
 
 // Look up all referents/annotations for a song.
 geniusClient.getReferents({"song_id": "378195", "text_format": "plain"}, function (error, results) {
@@ -98,7 +102,7 @@ geniusClient.search("Kendrick Lamar", function (error, results) {
 });
 
 // Look up a web page to which annotations may be attached.
-geniusClient.getWebPage({"raw_annotatable_url": "https://docs.genius.com"}, 
+geniusClient.getWebPage({"raw_annotatable_url": "https://docs.genius.com"},
   function(error, page) {
   });
 
